@@ -69,10 +69,11 @@ function startGame() {
 			document.getElementsByTagName('body')[0].style.animation = "";
 			i++;
 		}
-		var ranGen0 = hex[getRandomInt(16)];
+		var len = hex.length;
+		var ranGen0 = hex[getRandomInt(len)];
 		document.getElementById("ran_num").innerHTML = bcd_to_binary[ranGen0];
-		var ranGen1 = hex[getRandomInt(16)];
-		var ranGen2 = hex[getRandomInt(16)];
+		var ranGen1 = hex[getRandomInt(len)];
+		var ranGen2 = hex[getRandomInt(len)];
 		var ranGen3 = hex[getRandomInt(3)];
 		if(ranGen3==0) {
 			document.getElementById('choice1').innerText = ranGen0;
@@ -127,6 +128,8 @@ function checkAns(text, ans){
 		}
 	}
 	else {
+		hex.push(text);
+		hex.push(ans);
 		endTime = performance.now();
 		prevTime = curTime;
 		curTime = ((endTime - startTime) + prevTime) / 2;
