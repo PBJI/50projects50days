@@ -145,3 +145,4 @@ function checkAns(text, ans){
 	document.getElementById("show_time").innerText =  ((curTime / 1000).toFixed(2)).toString()+"s";
 	setTimeout(startGame, 2000);
 }
+//New version
