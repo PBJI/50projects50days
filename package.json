@@ -1,0 +1,14 @@
+{
+  "name": "50projects50days",
+  "version": "1.0.0",
+  "description": "A guide through all of the 51 projects in this directory.",
+  "main": "index.js",
+  "scripts": {  
+    "dev" : "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

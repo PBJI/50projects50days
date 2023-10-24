@@ -121,9 +121,9 @@ function checkAns(text, ans){
 		curTime = ((endTime - startTime) + prevTime) / 2;
 		var i=0;
 		while(document.getElementsByClassName('row-wise')[i]) {
-			document.getElementsByClassName('row-wise')[i].style.animation = "right 1s";
-			document.getElementById('ran_num').style.animation = "right 1s";
-			document.getElementsByTagName('body')[0].style.animation = "right 1s";
+			document.getElementsByClassName('row-wise')[i].style.animation = "right 2s ease-in-out 0s infinite both";
+			document.getElementById('ran_num').style.animation = "right 2s ease-in-out 0s infinite both";
+			document.getElementsByTagName('body')[0].style.animation = "right 2s ease-in-out 0s infinite both";
 			i++;
 		}
 	}
@@ -135,9 +135,9 @@ function checkAns(text, ans){
 		curTime = ((endTime - startTime) + prevTime) / 2;
 		var i=0;
 		while(document.getElementsByClassName('row-wise')[i]) {
-			document.getElementsByClassName('row-wise')[i].style.animation = "wrong 1s";
-			document.getElementById('ran_num').style.animation = "wrong 1s";
-			document.getElementsByTagName('body')[0].style.animation = "wrong 1s";
+			document.getElementsByClassName('row-wise')[i].style.animation = "wrong 2s ease-in-out 0s infinite both";
+			document.getElementById('ran_num').style.animation = "wrong 2s ease-in-out 0s infinite both";
+			document.getElementsByTagName('body')[0].style.animation = "wrong 2s ease-in-out 0s infinite both";
 			i++;
 		}
 		curTime = curTime*1.50;
